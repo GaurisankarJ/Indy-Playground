@@ -14,3 +14,9 @@ docker-compose build
 docker-compose run agent /bin/bash
 ```
 
+## Setting up the image:
+
+```
+docker pull gaurisankarj/indy_playground:latest
+docker tag gaurisankarj/indy_playground:latest indy_agent:latest
+```
