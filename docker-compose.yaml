@@ -1,0 +1,15 @@
+version: '3'
+
+services:       
+  agent:
+    image: indy_agent
+    build: ./
+    # command: "npm start"
+    volumes:
+      - ./:/src/app
+    ports:
+      - 8000:8000
+    network_mode: "host"
+    
+    
+

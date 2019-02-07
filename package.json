@@ -5,8 +5,8 @@
     "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node src/main.js",
-        "ledger:start": "docker build -f indy_pool/indy-pool.dockerfile -t indy_pool . && docker run --name indy_pool -itd -p 9701-9708:9701-9708 indy_pool",
+        "start": "nodemon src/main.js",
+        "ledger:start": "docker build -f indy_dockerfile/indy-pool.dockerfile -t indy_pool . && docker run --name indy_pool -itd -p 9701-9708:9701-9708 indy_pool",
         "ledger:stop": "docker stop indy_pool && docker rm indy_pool"
     },
     "repository": {
@@ -17,6 +17,7 @@
     "dependencies": {
         "cryptiles": "^4.1.1",
         "home-dir": "^1.0.0",
+        "indy-sdk": "^1.7.0",
         "mkdirp": "^0.5.1"
     },
     "devDependencies": {
