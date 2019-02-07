@@ -14,9 +14,10 @@ docker pull gaurisankarj/indy_playground:latest
 docker tag gaurisankarj/indy_playground:latest indy_agent:latest
 ```
 
-## Start the container:
+## Start/Stop the container:
 
 ```
 docker-compose build
 docker-compose run agent /bin/bash
+docker-compose down
 ```
