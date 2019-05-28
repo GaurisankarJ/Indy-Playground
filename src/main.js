@@ -5,5 +5,5 @@ run()
 
 async function run() {
     await gettingStarted.run()
-    await anoncredsRevocation.run()
+    // await anoncredsRevocation.run()
 }
